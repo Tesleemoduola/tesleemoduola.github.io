@@ -762,7 +762,7 @@
 						<!-- Footer -->
 						<footer>
 							<div class="pagination">
-								<!--<a href="#" class="previous">Prev</a>-->
+								<a href="#" class="previous">Prev</a>
 								<a href="#" class="page active">1</a>
                                 <a href="#" class="page">2</a>
                                 <a href="#" class="page">3</a>
@@ -849,29 +849,110 @@
 		<script src="assets/js/main.js"></script>
     
 	<!-- Pagination script -->
-		<script>
-			document.querySelectorAll(".pagination .page").forEach(button => {
-				button.addEventListener("click", function(event) {
-					event.preventDefault();
-			
-					let pageNumber = this.textContent.trim();
-			
-					// Hide all pages
-					document.querySelectorAll("section[id^='page']").forEach(section => {
-						section.style.display = "none";
-					});
-			
-					// Show selected page
-					const target = document.getElementById("page" + pageNumber);
-					if (target) {
-						target.style.display = "block";
-					}
-			
-					// Change active style
-					document.querySelectorAll(".pagination .page").forEach(b => b.classList.remove("active"));
-					this.classList.add("active");
+	<script>
+		// Function to update Prev/Next disabled state
+		function updateNavButtons() {
+			const activeBtn = document.querySelector(".pagination .page.active");
+			const currentPage = parseInt(activeBtn.textContent.trim());
+		
+			const prevBtn = document.querySelector(".pagination .previous");
+			const nextBtn = document.querySelector(".pagination .next");
+		
+			// Disable PREV on page 1
+			if (currentPage === 1) {
+				prevBtn.classList.add("disabled");
+				prevBtn.style.pointerEvents = "none";
+				prevBtn.style.opacity = "0.4";
+			} else {
+				prevBtn.classList.remove("disabled");
+				prevBtn.style.pointerEvents = "auto";
+				prevBtn.style.opacity = "1";
+			}
+		
+			// Disable NEXT on last page
+			const totalPages = document.querySelectorAll(".pagination .page").length;
+		
+			if (currentPage === totalPages) {
+				nextBtn.classList.add("disabled");
+				nextBtn.style.pointerEvents = "none";
+				nextBtn.style.opacity = "0.4";
+			} else {
+				nextBtn.classList.remove("disabled");
+				nextBtn.style.pointerEvents = "auto";
+				nextBtn.style.opacity = "1";
+			}
+		}
+		
+		
+		// Handle number buttons
+		document.querySelectorAll(".pagination .page").forEach(button => {
+			button.addEventListener("click", function(event) {
+				event.preventDefault();
+		
+				let pageNumber = this.textContent.trim();
+		
+				// Hide all pages
+				document.querySelectorAll("section[id^='page']").forEach(section => {
+					section.style.display = "none";
 				});
+		
+				// Show selected page
+				const target = document.getElementById("page" + pageNumber);
+				if (target) {
+					target.style.display = "block";
+				}
+		
+				// Update active button
+				document.querySelectorAll(".pagination .page").forEach(b => b.classList.remove("active"));
+				this.classList.add("active");
+		
+				// Update button states
+				updateNavButtons();
 			});
-			</script>
+		});
+		
+		
+		// NEXT button
+		const nextBtn = document.querySelector(".pagination .next");
+		if (nextBtn) {
+			nextBtn.addEventListener("click", function(e) {
+				e.preventDefault();
+		
+				const activeBtn = document.querySelector(".pagination .page.active");
+				let currentPage = parseInt(activeBtn.textContent.trim());
+				let nextPage = currentPage + 1;
+		
+				const nextPageBtn = [...document.querySelectorAll(".pagination .page")]
+					.find(btn => parseInt(btn.textContent.trim()) === nextPage);
+		
+				if (nextPageBtn) {
+					nextPageBtn.click();
+				}
+			});
+		}
+		
+		
+		// PREVIOUS button
+		const prevBtn = document.querySelector(".pagination .previous");
+		if (prevBtn) {
+			prevBtn.addEventListener("click", function(e) {
+				e.preventDefault();
+		
+				const activeBtn = document.querySelector(".pagination .page.active");
+				let currentPage = parseInt(activeBtn.textContent.trim());
+				let prevPage = currentPage - 1;
+		
+				const prevPageBtn = [...document.querySelectorAll(".pagination .page")]
+					.find(btn => parseInt(btn.textContent.trim()) === prevPage);
+		
+				if (prevPageBtn) {
+					prevPageBtn.click();
+				}
+			});
+		}
+		
+		// Initialize disabled states on page load
+		updateNavButtons();
+		</script>
 </body>
 </html>
