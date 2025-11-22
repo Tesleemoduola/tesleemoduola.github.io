@@ -11,7 +11,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* Enhanced header and intro */
+#header{position:sticky;top:0;z-index:2200;background:transparent;transition:background .28s ease, box-shadow .28s ease;}
+.scrolled #header{background: rgba(0,0,0,0.92) !important; box-shadow: 0 6px 20px rgba(0,0,0,0.25);}
+#intro{margin-top:72px;background-image:url('image/cover_366998.svg');background-size:cover;background-position:center;padding:3.2rem 1.5rem;color:white !important;min-height:300px;display:flex;align-items:center;justify-content:center;text-align:center;}
+#intro h1{font-size:2.4rem;letter-spacing:1px;margin:0 0 0.6rem 0;}
+#intro p{max-width:900px;margin:0 auto;font-size:1.03rem;line-height:1.6;}
+nav .links li.active a{background:rgba(255,255,255,0.08);padding:6px 8px;border-radius:6px;}
+nav li i{margin-right:8px;}
+#theme-toggle{position:absolute;right:12px;top:12px;background:transparent;border:1px solid rgba(255,255,255,0.12);padding:6px;border-radius:6px;color:inherit;cursor:pointer;}
+.posts article{opacity:0;transform:translateY(12px);transition:all .45s ease;}
+.posts article.visible{opacity:1;transform:none;}
+.pagination .page.active{background:#fff;color:#000;}
+body.dark{background-color:#071016;color:#eaeaea;}
+/* responsive tweaks */
+@media(max-width:900px){ #intro{padding:2rem 1rem;min-height:260px;} #intro h1{font-size:1.6rem;} #theme-toggle{top:70px;} nav .links{gap:6px;}}
+</style>
+
+</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -41,20 +61,20 @@
 					</div>
 
 				<!-- Header -->
-					<header id="header">
+					<header id="header"><button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
 						<a href="index.html" class="logo">TESLEEM ODUOLA</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">Excel</a></li>
-							<li><a href="powerbi.html">Power BI</a></li>
-							<li><a href="sql.html">SQL</a></li>
-							<li class="active"><a href="python.html">Pyhton</a></li>
-							<li><a href="r.html">R</a></li>
-							<li><a href="tableau.html">Tableau</a></li>
-							<li><a href="bioinformatics.html">Bioinformatics</a></li>
+							<li><a href="index.html"><i class="fas fa-file-excel" aria-hidden="true"></i> Excel</a></li>
+							<li><a href="powerbi.html"><i class="fas fa-chart-line" aria-hidden="true"></i> Power BI</a></li>
+							<li><a href="sql.html"><i class="fas fa-database" aria-hidden="true"></i> SQL</a></li>
+							<li class="active"><a href="python.html"><i class="fab fa-python" aria-hidden="true"></i> Python/ML</a></li>
+							<li><a href="r.html"><i class="fab fa-r-project" aria-hidden="true"></i> R</a></li>
+							<li><a href="tableau.html"><i class="fas fa-chart-bar" aria-hidden="true"></i> Tableau</a></li>
+							<li><a href="bioinformatics.html"><i class="fas fa-dna" aria-hidden="true"></i> Bioinformatics</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.x.com/oduolates" class="icon brands alt fa-twitter"><span class="label">X</span></a></li>
@@ -76,7 +96,7 @@
 										<h2><a href="https://github.com/Tesleemoduola/Customer-Review-Sentiment-Analysis">Customer Product Review Sentiment Prediction<br />
 										</a></h2>
 									</header>
-									<a href="https://github.com/Tesleemoduola/Customer-Review-Sentiment-Analysis" class="image fit"><img src="images/sentiment.jpg" alt="" /></a>
+									<a href="https://github.com/Tesleemoduola/Customer-Review-Sentiment-Analysis" class="image fit"><img src="image/sentiment.jpg" alt="" /></a>
 									<p>This project aims to develop a robust sentiment analysis system for e-commerce product reviews, with a specific focus on the Electronics 
 									   category on Amazon. Utilizing advanced Data Science techniques, the goal is to create an end-to-end solution capable of extracting, 
 									   preprocessing, analyzing, and visualizing customer sentiment from textual reviews.</p>
@@ -90,7 +110,7 @@
 										<h2><a href="https://github.com/Tesleemoduola/Diabetes-Prediction-Model">Diabetes Prediction Model<br />
 										</a></h2>
 									</header>
-									<a href="https://github.com/Tesleemoduola/Diabetes-Prediction-Model" class="image fit"><img src="images/diabetic.jpg" alt="" /></a>
+									<a href="https://github.com/Tesleemoduola/Diabetes-Prediction-Model" class="image fit"><img src="image/diabetic.jpg" alt="" /></a>
 									<p>Diabetes Mellitus is one of the leading cause of morbidity and mortality. This project focuses on building a machine learning model to predict 
 									   whether a patient is likely to develop diabetes based on various medical attributes. The goal is to identify patterns that can help in early diagnosis and improve patient outcomes.</p>
 									<ul class="actions special">
@@ -102,7 +122,7 @@
 										<h2><a href="https://github.com/Tesleemoduola/Customer-Segmentation-Analysis-Using-Unsupervised-Machine-Learning">Customer Segmentation Analysis Using Unsupervised Machine Learning<br />
 										</a></h2>
 									</header>
-									<a href="https://github.com/Tesleemoduola/Customer-Segmentation-Analysis-Using-Unsupervised-Machine-Learning" class="image fit"><img src="images/tourism.jpg" alt="" /></a>
+									<a href="https://github.com/Tesleemoduola/Customer-Segmentation-Analysis-Using-Unsupervised-Machine-Learning" class="image fit"><img src="image/tourism.jpg" alt="" /></a>
 									<p>Customer Segmentation Analysis Using Unsupervised Machine Learning project aimed to utilize unsupervised machine learning to design a targeted marketing campaign tailored to specific 
 										groups of tourists (clusters) visiting Tanzania in order to attract more visitors to the country by utilizing unsupervised machine learning techniques.</p>
 									<ul class="actions special">
@@ -114,7 +134,7 @@
 										<h2><a href="https://github.com/Tesleemoduola/Heart-Disease-Prediction-Using-Health-Indices">Heart Disease Prediction Using Health Indices<br />
 										</a></h2>
 									</header>
-									<a href="https://github.com/Tesleemoduola/Heart-Disease-Prediction-Using-Health-Indices" class="image fit"><img src="images/heart-health.jpg" alt="" /></a>
+									<a href="https://github.com/Tesleemoduola/Heart-Disease-Prediction-Using-Health-Indices" class="image fit"><img src="image/heart-health.jpg" alt="" /></a>
 									<p>The purpose of this project was to develop an effective Machine Learning model to identify patient at risk of heart disease using some health indices and the patient's demography.
 										By applying advanced analytics and machine learning techniques to the provided dataset.</p>
 									<ul class="actions special">
@@ -127,7 +147,7 @@
 										<h2><a href="https://github.com/Tesleemoduola/Customer-Churn-Prediction">Customer Churn Prediction<br />
 										</a></h2>
 									</header>
-									<a href="https://github.com/Tesleemoduola/Customer-Churn-Prediction" class="image fit"><img src="images/churn.png" alt="" /></a>
+									<a href="https://github.com/Tesleemoduola/Customer-Churn-Prediction" class="image fit"><img src="image/churn.png" alt="" /></a>
 									<p>This project analyszed data from ConnectTel, a telecommunication company, to identify key indicators for customer churning and develop an efficient model to predict customer churn.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/Tesleemoduola/Customer-Churn-Prediction" class="button">View Project</a></li>
@@ -138,7 +158,7 @@
 										<h2><a href="https://github.com/Tesleemoduola/Predicting-Hospital-Length-of-Stay-Using-Machine-Learning">Predicting Hospital Length of Stay Using Machine Learning<br />
 										</a></h2>
 									</header>
-									<a href="https://github.com/Tesleemoduola/Predicting-Hospital-Length-of-Stay-Using-Machine-Learning" class="image fit"><img src="images/lhs.jpeg" alt="" /></a>
+									<a href="https://github.com/Tesleemoduola/Predicting-Hospital-Length-of-Stay-Using-Machine-Learning" class="image fit"><img src="image/lhs.jpeg" alt="" /></a>
 									<p>The objective of this project is to develop an accurate machine learning model to predict hospital length of stay based on patient and clinical data. 
 										   By optimizing the prediction process with advanced algorithms, the goal is to provide hospitals with actionable insights that enhance resource allocation, 
 										   streamline patient care, and reduce operational costs.</p>
@@ -154,7 +174,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -165,7 +185,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -176,7 +196,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -187,7 +207,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -198,7 +218,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -209,7 +229,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -223,7 +243,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -234,7 +254,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -245,7 +265,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -256,7 +276,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -267,7 +287,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -278,7 +298,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -292,7 +312,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -303,7 +323,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -314,7 +334,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -325,7 +345,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -336,7 +356,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -347,7 +367,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -361,7 +381,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -372,7 +392,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -383,7 +403,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -394,7 +414,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -405,7 +425,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -416,7 +436,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -430,7 +450,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -441,7 +461,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -452,7 +472,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -463,7 +483,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -474,7 +494,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -485,7 +505,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -499,7 +519,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -510,7 +530,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -521,7 +541,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -532,7 +552,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -543,7 +563,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -554,7 +574,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -568,7 +588,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -579,7 +599,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -590,7 +610,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -601,7 +621,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -612,7 +632,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -623,7 +643,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -637,7 +657,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -648,7 +668,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -659,7 +679,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -670,7 +690,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -681,7 +701,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -692,7 +712,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -706,7 +726,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -717,7 +737,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -728,7 +748,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -739,7 +759,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -750,7 +770,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -761,7 +781,7 @@
 										<h2><a href="#">TITLE<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -964,5 +984,35 @@
 		// Initialize disabled states on page load
 		updateNavButtons();
 		</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    // reveal posts
+    document.querySelectorAll('.posts article').forEach((el, idx) => setTimeout(()=>el.classList.add('visible'), idx*80));
+    // theme toggle
+    const btn = document.getElementById('theme-toggle');
+    if(localStorage.getItem('site-theme')==='dark') document.body.classList.add('dark');
+    if(btn){ btn.addEventListener('click', ()=>{ document.body.classList.toggle('dark'); localStorage.setItem('site-theme', document.body.classList.contains('dark')?'dark':'light'); updateIcon(); }); }
+    function updateIcon(){ const b=document.getElementById('theme-toggle'); if(!b) return; b.innerHTML = document.body.classList.contains('dark')?'<i class="fa-solid fa-sun"></i>':'<i class="fa-solid fa-moon"></i>'; }
+    updateIcon();
+    // header scroll behavior
+    document.addEventListener('scroll', ()=> { if(window.scrollY>20) document.body.classList.add('scrolled'); else document.body.classList.remove('scrolled'); });
+    // active nav based on URL
+    const path = window.location.pathname.split('/').pop();
+    document.querySelectorAll('nav .links li').forEach(li => li.classList.remove('active'));
+    document.querySelectorAll('nav .links a').forEach(a => { if(a.getAttribute('href')===path || (path==='' && a.getAttribute('href')==='index.html')) a.parentElement.classList.add('active'); });
+    // pagination next/prev support if present
+    const pages = [...document.querySelectorAll('.pagination .page')];
+    if(pages.length){
+        pages.forEach(btn => btn.addEventListener('click', function(e){ e.preventDefault(); const n = parseInt(this.textContent.trim()); if(isNaN(n)) return; document.querySelectorAll('section[id^="page"]').forEach(s=>s.style.display='none'); const t=document.getElementById('page'+n); if(t) t.style.display='block'; pages.forEach(p=>p.classList.remove('active')); this.classList.add('active'); updateNavState(); }));
+        const next = document.querySelector('.pagination .next'); const prev = document.querySelector('.pagination .previous');
+        if(next) next.addEventListener('click', function(e){ e.preventDefault(); const active = document.querySelector('.pagination .page.active'); if(!active) return; const cur = parseInt(active.textContent.trim()); const target = pages.find(p=>parseInt(p.textContent.trim())===cur+1); if(target) target.click(); });
+        if(prev) prev.addEventListener('click', function(e){ e.preventDefault(); const active = document.querySelector('.pagination .page.active'); if(!active) return; const cur = parseInt(active.textContent.trim()); const target = pages.find(p=>parseInt(p.textContent.trim())===cur-1); if(target) target.click(); });
+    }
+    function updateNavState(){ const active = document.querySelector('.pagination .page.active'); const total = pages.length; const nxt = document.querySelector('.pagination .next'); const prv = document.querySelector('.pagination .previous'); if(!active) return; const cur=parseInt(active.textContent.trim()); if(prv) { if(cur===1){prv.classList.add('disabled');prv.style.pointerEvents='none';prv.style.opacity='0.4'; } else {prv.classList.remove('disabled');prv.style.pointerEvents='auto';prv.style.opacity='1';}} if(nxt){ if(cur===total){nxt.classList.add('disabled');nxt.style.pointerEvents='none';nxt.style.opacity='0.4'; } else {nxt.classList.remove('disabled');nxt.style.pointerEvents='auto';nxt.style.opacity='1';}} }
+    updateNavState();
+});
+</script>
+
 </body>
 </html>
