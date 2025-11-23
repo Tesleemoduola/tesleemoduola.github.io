@@ -11,103 +11,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-/* Option B v10 styles */
-body{font-family: 'Poppins', Arial, sans-serif;margin:0;color:#222;background:#fff;}
-header{position:sticky;top:0;z-index:999;background:rgba(0,0,0,0.6);color:#fff;padding:12px 20px;backdrop-filter: blur(4px);}
-.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
-nav .links{list-style:none;margin:0;padding:0;display:flex;gap:10px;}
-nav .links li{display:inline-block;}
-nav .links a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:6px;font-weight:600;opacity:0.95;}
-nav .links li.active a{background:rgba(255,255,255,0.08);}
-#intro{min-height:380px;display:flex;align-items:center;justify-content:center;text-align:center;background-size:cover;background-position:center;padding:40px 20px;color:#fff;}
-#intro .intro-inner{max-width:980px;}
-#intro h1{font-size:40px;margin:0 0 12px;font-weight:800;letter-spacing:1px;}
-#intro p{font-size:18px;line-height:1.6;margin:0;}
-.container{max-width:1100px;margin:40px auto;padding:0 18px;}
-.posts{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;}
-.post-card{background:#fff;padding:22px;border:1px solid #eee;border-radius:6px;box-shadow:0 6px 20px rgba(0,0,0,0.04);}
-.footer{background:#222;color:#fff;padding:30px 18px;text-align:center;margin-top:60px;}
-@media(max-width:900px){.posts{grid-template-columns:1fr}.header-inner{padding:0 10px}#intro{padding:30px 12px}#intro h1{font-size:28px}}
-</style>
-
-<style>
-/* Header transparent -> solid on scroll */
-header{transition: background 300ms ease, box-shadow 300ms ease;}
-header.solid{background: #2b2f33; box-shadow: 0 4px 18px rgba(0,0,0,0.25);}
-.hamburger{display:none;cursor:pointer;padding:8px;border-radius:6px;}
-.hamburger .bar{width:22px;height:2px;background:#fff;margin:4px 0;transition:0.25s}
-nav.mobile-open{position:fixed;left:0;top:60px;right:0;background:rgba(0,0,0,0.95);padding:20px;display:block;}
-@media(max-width:900px){
-  nav .links{display:none}
-  .hamburger{display:block}
-  nav.mobile-open .links{display:block;flex-direction:column;gap:12px}
-}
-/* Project cards grid */
-.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
-@media(max-width:1100px){.projects-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:700px){.projects-grid{grid-template-columns:1fr}}
-.project-card{background:#fff;border-radius:8px;overflow:hidden;border:1px solid #eee;transition:transform .25s, box-shadow .25s;opacity:0;transform:translateY(18px);}
-.project-card.show{opacity:1;transform:none}
-.project-card img{width:100%;height:180px;object-fit:cover;display:block}
-.project-card .content{padding:16px}
-.project-card h3{margin:0 0 8px;font-size:18px}
-.project-card p{margin:0 0 12px;color:#444;font-size:14px;line-height:1.5}
-.project-card a.button{display:inline-block;padding:8px 12px;border-radius:6px;background:#0A2342;color:#fff;text-decoration:none;font-weight:700}
-</style>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<style>
-
-/* Ensure header transparent initial state */
-header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
-/* stronger overlay helper for intro when needed */
-#intro { background-repeat:no-repeat; background-size:cover; background-position:center; }
-/* ensure .intro-inner centers content and prevents left-aligned stacked text */
-#intro .intro-inner{ max-width:980px; margin:0 auto; padding:40px 20px; text-align:center; }
-
-</style>
-</head>
+	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
-					<div id="intro" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('image/cover_bioinformatics.png');">
-  <div class="intro-inner">
-    <h1>TESLEEM ADEREMI ODUOLA</h1>
-    <p>A seasoned Medical Officer transitioned into data science and bioinformatics, combining clinical expertise with advanced analytics to address healthcare, research, and business challenges. Skilled in Python, SQL, R, Machine Learning, and data visualization tools such as Excel, Tableau, and Power BI. I am also proficient with bioinformatics tools and workflows including BLAST, FASTQC, genome annotation pipelines, molecular docking, and pathway/omics analysis platforms. I bridge the gap between medicine, technology, and biological data. With a passion for transforming clinical, biological, and operational insights, I am committed to advancing healthcare and biomedical innovation through data-driven approaches.</p>
-    <ul class="actions special">
-      <li><a href="https://www.linkedin.com/in/tesleemaderemioduola/" class="button">Connect on LinkedIn</a></li>
-      <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-    </ul>
-  </div>
-</div>
-<!-- Header -->
-					
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+					<div id="intro">
+						<h1>TESLEEM ADEREMI ODUOLA<br />
+						</h1>
+						<p> A seasoned Medical Officer with extensive hands-on clinical experience, 
+                           transitioned into the realm of data science, mastering the art of analytics 
+                           and data-driven decision-making to strategically address business challenges.
+                           My unique background enables me to bridge the gap between healthcare and
+                           technology, driving strategic improvements and innovative solutions that
+                           enhance patient care and optimize business outcomes. A proficient Data
+                           Scientist with skills in Python, SQL, R, Machine Learning, and data
+                           visualization tools like Excel, Tableau, and Power BI. With a deep passion for
+                           leveraging data to transform business operations, I am committed to using my
+                           expertise to advance healthcare and business initiatives through insightful,
+                           data-driven approaches.
+                 </p>
+				 <ul>  
+                        <a href="https://www.linkedin.com/in/tesleemaderemioduola/"">Connect on LinkedIn</a></li>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
 
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">TESLEEM ODUOLA</a>
+					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -135,168 +71,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 						<!-- Posts -->
 							<section id="page1" class="posts">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="https://github.com/Tesleemoduola/Integrative-MLR-Docking-Study-of-Benzothiazole-Derivatives" class="image fit"><img src="image/docking_2.jpg" alt="" /></a>
+									<header>
+										<h2><a href="https://github.com/Tesleemoduola/Integrative-MLR-Docking-Study-of-Benzothiazole-Derivatives">Integrative-MLR/Docking-Study-of-Benzothiazole-Derivatives<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/Tesleemoduola/Integrative-MLR-Docking-Study-of-Benzothiazole-Derivatives" class="image fit"><img src="images/docking_2.jpg" alt="" /></a>
 									<p>This project combines Quantitative Structure/Activity Relationship (QSAR) modeling and Molecular Docking to evaluate benzothiazole-based compounds as potential therapeutic agents against prostate cancer. Using an integrated chemoinformatics and structural-bioinformatics workflow, the study predicts biological activity, identifies promising lead compounds, and compares their binding behavior to experimentally validated native ligands. </p>
 									<ul class="actions special">
 										<li><a href="https://Integrative-MLR-Docking-Study-of-Benzothiazole-Derivatives" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic03.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic04.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic05.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic06.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic07.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -306,168 +140,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 
 							<section id="page2" class="posts" style="display:none;">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -477,168 +209,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 							
 							<section id="page3" class="posts" style="display:none;">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -648,168 +278,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 
 							<section id="page4" class="posts" style="display:none;">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -819,168 +347,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 							
 							<section id="page5" class="posts" style="display:none;">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -990,168 +416,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 							
 							<section id="page6" class="posts" style="display:none;">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -1161,168 +485,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 							
 							<section id="page7" class="posts" style="display:none;">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -1332,168 +554,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 							
 							<section id="page8" class="posts" style="display:none;">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -1503,168 +623,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 							
 							<section id="page9" class="posts" style="display:none;">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -1674,168 +692,66 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 							
 							<section id="page10" class="posts" style="display:none;">
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									
-<header id="header" class="transparent">
-  <div class="header-inner">
-    <a href="index.html" class="logo">TESLEEM ODUOLA</a>
-    <div class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-    </div>
-    <nav id="nav">
-      <ul class="links">
-        <li><a href="index.html">Excel</a></li>
-        <li><a href="powerbi.html">Power BI</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="r.html">R</a></li>
-        <li><a href="tableau.html">Tableau</a></li>
-        <li><a href="bioinformatics.html">Bioinformatics</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-									<a href="#" class="image fit"><img src="image/pic02.jpg" alt="" /></a>
+									<header>
+										<h2><a href="#">TITLE<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
@@ -2038,72 +954,5 @@ header.transparent { background: rgba(0,0,0,0); box-shadow:none; }
 		// Initialize disabled states on page load
 		updateNavButtons();
 		</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  // mark active nav link
-  const path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('nav .links a').forEach(a=>{
-    const href = a.getAttribute('href');
-    if(href===path) a.parentElement.classList.add('active');
-  });
-  // reveal small animation for posts
-  document.querySelectorAll('.post-card').forEach((el, idx)=> setTimeout(()=> el.style.opacity=1, 120*idx));
-});
-</script>
-\n
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  // header becomes solid on scroll
-  const header = document.querySelector('header');
-  const hamburger = document.getElementById('hamburger');
-  const mainnav = document.getElementById('mainnav');
-  function checkScroll(){ if(window.scrollY>30) header.classList.add('solid'); else header.classList.remove('solid'); }
-  checkScroll(); window.addEventListener('scroll', checkScroll);
-  // mobile hamburger toggle
-  hamburger.addEventListener('click', function(){ 
-    const expanded = this.getAttribute('aria-expanded') === 'true';
-    this.setAttribute('aria-expanded', !expanded);
-    if(mainnav.classList.contains('mobile-open')) mainnav.classList.remove('mobile-open'); else mainnav.classList.add('mobile-open');
-  });
-  // reveal project cards
-  document.querySelectorAll('.project-card').forEach((el,i)=> setTimeout(()=> el.classList.add('show'), 120*i));
-  // mark active nav based on filename
-  const path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('nav .links a').forEach(a=>{
-    if(a.getAttribute('href')===path) a.parentElement.classList.add('active');
-  });
-});
-</script>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  const header = document.getElementById('header');
-  if(header && !header.classList.contains('transparent')) header.classList.add('transparent');
-  function checkScroll(){ if(window.scrollY>50) header.classList.add('solid'); else header.classList.remove('solid'); }
-  checkScroll(); window.addEventListener('scroll', checkScroll);
-
-  const burger = document.getElementById('hamburger');
-  const nav = document.getElementById('nav');
-  if(burger && nav){
-    burger.addEventListener('click', function(){
-      nav.classList.toggle('mobile-open');
-      const expanded = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', (!expanded).toString());
-    });
-  }
-
-  // reveal project cards staggered
-  document.querySelectorAll('.project-card').forEach((el,i)=> setTimeout(()=> el.classList.add('show'), 120*i));
-
-  // mark active nav based on filename
-  const path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('#nav .links a').forEach(a=>{
-    if(a.getAttribute('href')===path) a.parentElement.classList.add('active');
-  });
-});
-</script>
-
 </body>
 </html>
